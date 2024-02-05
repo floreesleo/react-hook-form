@@ -5,34 +5,26 @@ export default function App() {
     <div>
       {/* Nombre */}
       <Label htmlFor="nombre">Nombre alskdjalskdj</Label>
-      <Input />
+      <Input type="text" />
 
       {/* Correo */}
-      <label className="block" htmlFor="correo">
-        Correo
-      </label>
-      <Input placeholder="correo@gmail.com" />
+      <Label htmlFor="correo">Correo electronico</Label>
+      <Input type="email" />
 
       {/* Contraseña */}
-      <label className="block" htmlFor="password">
-        Contraseña
-      </label>
-      <Input />
+      <Label htmlFor="contraseña">Contraseña</Label>
+      <Input type="password" />
 
       {/* Confirmar contraseña */}
-      <label className="block" htmlFor="confirmPassword">
-        Confirmar contraseña
-      </label>
-      <Input />
+      <Label htmlFor="confirmarContraseña">Confirmar contraseña</Label>
+      <Input type="password" />
 
       {/* Fecha de nacimiento */}
-      <label className="block" htmlFor="fechaNacimiento">
-        Fecha de nacimiento
-      </label>
+      <Label htmlFor="fechaNacimiento">Fecha de nacimiento</Label>
       <Input />
 
       {/* Pais */}
-      <label htmlFor="pais">Pais</label>
+      <Label htmlFor="pais">País</Label>
       <select name="" id="">
         <option value="mx">México</option>
         <option value="co">Colombia</option>
@@ -40,12 +32,12 @@ export default function App() {
       </select>
 
       {/* Archivo */}
-      <label htmlFor="file">Foto de perfil</label>
-      <Input />
+      <Label htmlFor="file">Foto de perfil</Label>
+      <Input type="file" />
 
       {/* Terminos */}
-      <label htmlFor="terminos">Acepto términos y condiciones</label>
-      <Input />
+      <Label htmlFor="terminos">Acepto los terminos y condiciones</Label>
+      <Input type="checkbox" />
     </div>
   );
 }
