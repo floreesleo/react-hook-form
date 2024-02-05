@@ -1,4 +1,4 @@
-import { Label, Input } from "./components/ui";
+import { Label, Input, Button } from "./components/ui";
 
 export default function App() {
   return (
@@ -38,6 +38,8 @@ export default function App() {
       {/* Terminos */}
       <Label htmlFor="terminos">Acepto los terminos y condiciones</Label>
       <Input type="checkbox" />
+
+      <Button>Enviar formulario</Button>
     </div>
   );
 }
